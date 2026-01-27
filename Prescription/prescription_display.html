@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription Information - Ajay</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .patient-info {
+            background: #f8fafc;
+            border-left: 5px solid #4f46e5;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        .patient-info h2 {
+            color: #4f46e5;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .info-item strong {
+            color: #374151;
+            margin-right: 10px;
+            min-width: 80px;
+        }
+
+        .medicines-section {
+            margin-bottom: 30px;
+        }
+
+        .medicines-section h2 {
+            color: #4f46e5;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #e5e7eb;
+            padding-bottom: 10px;
+        }
+
+        .medicine-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .medicine-table th {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .medicine-table td {
+            padding: 15px;
+            border-bottom: 1px solid #e5e7eb;
+            vertical-align: top;
+        }
+
+        .medicine-table tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        .medicine-table tr:hover {
+            background-color: #f3f4f6;
+            transform: scale(1.01);
+            transition: all 0.2s ease;
+        }
+
+        .medicine-name {
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 5px;
+        }
+
+        .schedule-section {
+            background: #ecfdf5;
+            border: 2px solid #10b981;
+            border-radius: 10px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        .schedule-section h2 {
+            color: #065f46;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .time-slot {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #10b981;
+            font-weight: 600;
+            color: #065f46;
+        }
+
+        .medicine-list {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #d1fae5;
+        }
+
+        .warning {
+            background: #fef3cd;
+            border: 2px solid #f59e0b;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .warning h3 {
+            color: #92400e;
+            margin-bottom: 10px;
+        }
+
+        .warning p {
+            color: #78350f;
+            font-weight: 500;
+        }
+
+        .icon {
+            display: inline-block;
+            margin-right: 8px;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .medicine-table {
+                font-size: 0.9rem;
+            }
+            
+            .schedule-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📋 Prescription Details</h1>
+            <p>Complete medication information and schedule</p>
+        </div>
+
+        <div class="content">
+            <div class="patient-info">
+                <h2><span class="icon">👤</span>Patient Information</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <strong>Name:</strong>
+                        <span>Ajay</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Date:</strong>
+                        <span>28/10/2023</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Hospital:</strong>
+                        <span>Rajanukunte Hospital</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="medicines-section">
+                <h2><span class="icon">💊</span>Prescription Interpretation</h2>
+                <table class="medicine-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Medicine Name</th>
+                            <th>Dosage & Timing</th>
+                            <th>Duration</th>
+                            <th>Notes / Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <div class="medicine-name">Cap. RAB-D</div>
+                                <small>(Rabeprazole + Domperidone)</small>
+                            </td>
+                            <td>1 capsule in the morning before food</td>
+                            <td>5 days</td>
+                            <td>For acidity / gastric protection</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <div class="medicine-name">Syp. Livo-52 / Syp. Liv-20</div>
+                                <small>(Liver tonic / digestion syrup)</small>
+                            </td>
+                            <td>5 ml, twice daily after food</td>
+                            <td>5 days</td>
+                            <td>Supports digestion & liver function</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <div class="medicine-name">Syp. Ulycure</div>
+                                <small>(Ayurvedic digestive syrup)</small>
+                            </td>
+                            <td>5 ml, twice daily</td>
+                            <td>5 days</td>
+                            <td>For indigestion / gastric comfort</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <div class="medicine-name">Tab. PCM 650</div>
+                                <small>(Paracetamol 650 mg)</small>
+                            </td>
+                            <td>1 tablet, every 6–8 hours if fever/pain</td>
+                            <td>As needed</td>
+                            <td><strong>Do not exceed 3 tablets/day</strong></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                <div class="medicine-name">ORS</div>
+                                <small>(Electrolyte Solution)</small>
+                            </td>
+                            <td>1 packet in 1 liter of water, sip throughout the day</td>
+                            <td>2–3 days</td>
+                            <td>For hydration and recovery</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="schedule-section">
+                <h2><span class="icon">⏰</span>Simple Medicine Schedule</h2>
+                <div class="schedule-grid">
+                    <div class="time-slot">Morning (Before Food)</div>
+                    <div class="medicine-list">Cap. RAB-D</div>
+                    
+                    <div class="time-slot">After Breakfast</div>
+                    <div class="medicine-list">Syp. Livo/Liv-20 (5 ml) + Syp. Ulycure (5 ml)</div>
+                    
+                    <div class="time-slot">Afternoon / Evening</div>
+                    <div class="medicine-list">Repeat syrups after food</div>
+                    
+                    <div class="time-slot">If fever/pain</div>
+                    <div class="medicine-list">Tab. PCM 650 (max 3 tablets/day)</div>
+                    
+                    <div class="time-slot">All day</div>
+                    <div class="medicine-list">Drink ORS slowly to maintain hydration</div>
+                </div>
+            </div>
+
+            <div class="warning">
+                <h3>⚠️ Important Reminders</h3>
+                <p>Follow the prescribed dosages exactly. Do not exceed 3 PCM tablets per day. Complete the full course even if you feel better. Contact your doctor if symptoms persist or worsen.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
