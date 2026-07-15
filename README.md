@@ -2,7 +2,7 @@
 
 # 💊 Prescription Analyzer
 
-### AI-Powered Handwritten Prescription Digitization System
+### Inscribed Prescription Digitalization and Multilingual Accessibility
 
 <p align="center">
 
@@ -105,8 +105,7 @@ Translate prescriptions into multiple languages including:
 * Telugu
 * Tamil
 * Malayalam
-* Marathi
-* Bengali
+  
 
 ---
 
