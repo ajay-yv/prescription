@@ -1,154 +1,133 @@
 <div align="center">
 
-# 💊 Prescription Analyzer
+# 💊 Inscribed Prescription Digitalization and Multilingual Accessibility
 
-### Inscribed Prescription Digitalization and Multilingual Accessibility
-
-<p align="center">
-
-<img src="https://img.shields.io/github/license/ajay-yv/prescription?style=for-the-badge">
-
-<img src="https://img.shields.io/github/stars/ajay-yv/prescription?style=for-the-badge">
-
-<img src="https://img.shields.io/github/forks/ajay-yv/prescription?style=for-the-badge">
-
-<img src="https://img.shields.io/github/last-commit/ajay-yv/prescription?style=for-the-badge">
-
-</p>
+### AI-Powered Healthcare Solution for Digitizing Handwritten Medical Prescriptions
 
 <p align="center">
 
-<img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white">
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white"/>
 
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
 
-<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white">
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"/>
 
-<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express">
+<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express"/>
 
-<img src="https://img.shields.io/badge/Tesseract.js-OCR-success?style=for-the-badge">
+<img src="https://img.shields.io/badge/Tesseract.js-OCR-success?style=for-the-badge"/>
 
-<img src="https://img.shields.io/badge/Google%20Cloud-Text%20to%20Speech-4285F4?style=for-the-badge&logo=googlecloud">
+<img src="https://img.shields.io/badge/Google%20Cloud-Text--to--Speech-4285F4?style=for-the-badge&logo=googlecloud"/>
+
+<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
 
 </p>
 
-### Transforming Handwritten Medical Prescriptions into Intelligent Digital Healthcare Records
+### Transforming Handwritten Prescriptions into Accessible Digital Healthcare Records
 
-**OCR • Artificial Intelligence • Healthcare • Translation • Text-to-Speech • Prescription History**
+**OCR • Artificial Intelligence • Multilingual Translation • Text-to-Speech • Prescription History**
 
 </div>
 
 ---
 
-# 📚 Table of Contents
+# 📖 Overview
 
-* About the Project
-* Key Features
-* System Architecture
-* Workflow
-* Technology Stack
-* Project Structure
-* Prerequisites
-* Installation
-* Environment Variables
-* Running the Project
-* Usage
-* Applications
-* Future Enhancements
-* Contributing
-* License
-* Author
+Healthcare providers still rely heavily on handwritten prescriptions, which are often difficult to interpret and prone to human error. This project provides an AI-powered solution that digitizes handwritten prescriptions into structured digital records.
+
+Using Optical Character Recognition (OCR), multilingual translation, and text-to-speech technology, the application improves accessibility for patients, pharmacists, and healthcare professionals while preserving prescription history for future reference.
 
 ---
 
-# 📖 About the Project
+# 🎯 Objectives
 
-Prescription Analyzer is an AI-powered healthcare application that converts handwritten medical prescriptions into structured digital records using Optical Character Recognition (OCR).
-
-The system extracts prescription details, identifies medicine information, translates prescriptions into multiple languages, provides voice assistance using Text-to-Speech, and maintains a searchable prescription history for future reference.
-
-This project demonstrates the practical application of Artificial Intelligence in healthcare digitization, improving accessibility, reducing manual interpretation errors, and supporting digital healthcare workflows.
+- Digitize handwritten prescriptions using OCR.
+- Improve readability of medical prescriptions.
+- Support multilingual translation for better accessibility.
+- Enable voice playback using Text-to-Speech.
+- Maintain a searchable prescription history.
+- Reduce prescription interpretation errors.
 
 ---
 
-# ✨ Key Features
+# ✨ Features
 
 ## 🔍 OCR-Based Prescription Recognition
 
-* Upload handwritten prescription images
-* Extract handwritten text using Tesseract.js
-* Convert scanned prescriptions into editable digital text
-* High-accuracy OCR processing
+- Upload handwritten prescription images.
+- Extract text using Tesseract.js OCR.
+- Convert handwritten prescriptions into digital text.
+- High-accuracy text recognition.
 
 ---
 
 ## 💊 Medicine Information Extraction
 
-Automatically identifies:
+Automatically extracts:
 
-* Medicine Name
-* Dosage
-* Frequency
-* Duration
-* Quantity
-* Medical Instructions
+- Medicine Name
+- Dosage
+- Frequency
+- Duration
+- Quantity
+- Medical Instructions
 
 ---
 
-## 🌍 Multi-Language Translation
+## 🌍 Multilingual Translation
 
-Translate prescriptions into multiple languages including:
+Translate extracted prescription text into multiple languages.
 
-* English
-* Kannada
-* Hindi
-* Telugu
-* Tamil
-* Malayalam
-  
+Supported languages include:
+
+- English
+- Kannada
+- Hindi
+- Telugu
+- Tamil
+- Malayalam
+- Marathi
+- Bengali
 
 ---
 
 ## 🔊 Text-to-Speech
 
-Read prescriptions aloud using speech synthesis.
+Convert translated prescription text into speech.
 
-Useful for:
+Benefits:
 
-* Elderly patients
-* Visually impaired users
-* Rural healthcare
-* Accessibility support
+- Accessibility for visually impaired users.
+- Support for elderly patients.
+- Easy understanding of prescription instructions.
 
 ---
 
 ## 📜 Prescription History
 
-Maintain a digital history of processed prescriptions.
+Maintain a digital history of previously processed prescriptions.
 
-Features:
+Features include:
 
-* View previous prescriptions
-* Search previous records
-* Access translated prescriptions
-* Organized chronological history
-* Easy retrieval of patient records
+- View previous prescriptions.
+- Search prescription records.
+- Revisit translated prescriptions.
+- Organized chronological history.
 
 ---
 
 ## 🔒 Secure Backend
 
-* Express REST APIs
-* Helmet Security
-* CORS Protection
-* Environment Variables
-* Rate Limiting
+- Express REST APIs
+- Environment Variables
+- Helmet Security
+- CORS Protection
+- Rate Limiting
 
 ---
 
 # 🏗️ System Architecture
 
-```text
+```
                     User
                       │
                       ▼
@@ -166,100 +145,91 @@ Features:
         │             │             │
         └─────────────┼─────────────┘
                       ▼
-      Digital Prescription Information
+         Digital Prescription Record
                       │
                       ▼
-         Prescription History Storage
-                      │
-                      ▼
-             User Dashboard
+          Prescription History
 ```
 
 ---
 
-# 🔄 Project Workflow
+# 🔄 Workflow
 
-```text
-Upload Prescription Image
-           │
-           ▼
-OCR Text Extraction
-           │
-           ▼
-Medicine Information Extraction
-           │
-           ▼
+```
+Upload Image
+      │
+      ▼
+OCR Recognition
+      │
+      ▼
+Medicine Extraction
+      │
+      ▼
 Language Translation
-           │
-           ▼
+      │
+      ▼
 Text-to-Speech
-           │
-           ▼
-Save Prescription History
-           │
-           ▼
-View Previous Records
+      │
+      ▼
+Save to History
+      │
+      ▼
+View Previous Prescriptions
 ```
 
 ---
 
 # 🛠️ Technology Stack
 
-### Frontend
+## Frontend
 
-* React
-* TypeScript
-* HTML5
-* CSS3
+- React
+- TypeScript
+- HTML5
+- CSS3
 
-### Backend
+## Backend
 
-* Node.js
-* Express.js
+- Node.js
+- Express.js
 
-### OCR
+## OCR
 
-* Tesseract.js
+- Tesseract.js
 
-### APIs
+## APIs
 
-* Translation API
-* Google Cloud Text-to-Speech
+- Translation API
+- Google Cloud Text-to-Speech
 
-### Security
+## Security
 
-* Helmet
-* CORS
-* Express Rate Limiter
-* dotenv
+- Helmet
+- CORS
+- Express Rate Limiter
+- dotenv
 
-### Development Tools
+## Development Tools
 
-* Visual Studio Code
-* Git
-* GitHub
-* npm
+- Git
+- GitHub
+- Visual Studio Code
+- npm
 
 ---
 
 # 📂 Project Structure
 
-```text
-prescription/
+```
+project-root/
 │
 ├── api/
-│   ├── translate.js
-│   ├── speech.js
-│   └── services/
-│
 ├── public/
-│
 ├── server/
-│   ├── app.js
-│   ├── routes/
 │   ├── controllers/
 │   ├── middleware/
-│   └── utils/
+│   ├── routes/
+│   └── services/
 │
 ├── src/
 │   ├── assets/
@@ -282,9 +252,9 @@ prescription/
 
 Install the following software:
 
-* Node.js (v18 or later)
-* npm
-* Git
+- Node.js (v18+)
+- npm
+- Git
 
 Verify installation:
 
@@ -301,13 +271,13 @@ git --version
 Clone the repository:
 
 ```bash
-git clone https://github.com/ajay-yv/prescription.git
+git clone https://github.com/your-username/your-repository.git
 ```
 
-Navigate into the project:
+Navigate to the project:
 
 ```bash
-cd prescription
+cd your-repository
 ```
 
 Install dependencies:
@@ -328,7 +298,7 @@ cd ..
 
 # ⚙️ Environment Variables
 
-Create a `.env` file in the project root:
+Create a `.env` file in the project root.
 
 ```env
 REACT_APP_TRANSLATE_API_URL=
@@ -336,8 +306,6 @@ REACT_APP_TRANSLATE_API_KEY=
 GOOGLE_APPLICATION_CREDENTIALS=
 PORT=5000
 ```
-
-Fill these values with your API credentials before running the application.
 
 ---
 
@@ -349,9 +317,9 @@ Fill these values with your API credentials before running the application.
 npm run dev
 ```
 
-Frontend:
+Frontend URL:
 
-```text
+```
 http://localhost:5173
 ```
 
@@ -359,78 +327,77 @@ http://localhost:5173
 
 ### Start the Backend
 
-Open a new terminal:
+Open another terminal:
 
 ```bash
 cd server
 ```
 
-Run:
+Start the server:
 
 ```bash
 node app.js
 ```
 
-If your entry file is different:
+If using another entry point:
 
 ```bash
 node index.js
 ```
 
-Or, if you use Nodemon:
+Or with Nodemon:
 
 ```bash
 npm run dev
 ```
 
-Backend:
+Backend URL:
 
-```text
+```
 http://localhost:5000
 ```
 
 ---
 
-# 🧪 How to Use
+# 🧪 Usage
 
-1. Launch the frontend and backend servers.
+1. Start the frontend and backend servers.
 2. Upload a handwritten prescription image.
-3. OCR extracts the handwritten text.
-4. Review the detected medicine information.
-5. Translate the prescription into your preferred language.
-6. Listen to the translated prescription using Text-to-Speech.
+3. Wait for OCR to process the image.
+4. Review the extracted prescription details.
+5. Translate the prescription into the preferred language.
+6. Listen to the translated text using Text-to-Speech.
 7. Save the prescription.
-8. Access previous prescriptions from the History section.
+8. View and manage previous prescriptions through the History section.
 
 ---
 
-# 🎯 Real-World Applications
+# 🌍 Real-World Applications
 
-* Hospitals
-* Clinics
-* Pharmacies
-* Telemedicine Platforms
-* Rural Healthcare
-* Digital Health Services
-* Medical Education
-* Healthcare Research
+- Hospitals
+- Clinics
+- Pharmacies
+- Telemedicine Platforms
+- Rural Healthcare
+- Digital Health Services
+- Healthcare Research
+- Medical Education
 
 ---
 
 # 🚀 Future Enhancements
 
-* AI-based Medicine Recommendation
-* Drug Interaction Detection
-* Electronic Health Records (EHR)
-* Doctor Dashboard
-* Patient Authentication
-* Hospital Management Integration
-* AI Medical Chatbot
-* Mobile Application
-* Offline OCR Processing
-* Cloud Synchronization
-* Smart Search Filters
-* Medicine Reminder Notifications
+- AI Medicine Recommendation
+- Drug Interaction Detection
+- Electronic Health Records (EHR)
+- Patient Authentication
+- Doctor Dashboard
+- Hospital Management Integration
+- Mobile Application
+- Offline OCR
+- Cloud Synchronization
+- Smart Search Filters
+- Medicine Reminder Notifications
 
 ---
 
@@ -439,7 +406,7 @@ http://localhost:5000
 Contributions are welcome.
 
 1. Fork the repository.
-2. Create a new feature branch.
+2. Create a feature branch.
 
 ```bash
 git checkout -b feature-name
@@ -467,26 +434,21 @@ This project is licensed under the MIT License.
 
 ---
 
-# 👨‍💻 Author
+# ⭐ Support
 
-**Ajay Y V**
+If you find this project helpful:
 
-Computer Science & Engineering (Data Science)
-
-Sai Vidya Institute of Technology
-
-📍 Bengaluru, Karnataka, India
-
-**GitHub:** https://github.com/ajay-yv
-
-**LinkedIn:** https://www.linkedin.com/in/ajay-y-v-987755292/
+- ⭐ Star this repository
+- 🍴 Fork the repository
+- 🐛 Report issues
+- 💡 Suggest new features
 
 ---
 
 <div align="center">
 
-### ⭐ If you found this project useful, please give it a Star!
+### Built to improve healthcare accessibility through Artificial Intelligence.
 
-Made with ❤️ by **Ajay Y V**
+**Making handwritten prescriptions readable, understandable, and accessible for everyone.**
 
 </div>
